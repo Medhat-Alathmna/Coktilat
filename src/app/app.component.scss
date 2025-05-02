@@ -1,0 +1,35 @@
+.card{
+  transition: all 0.3s ease;
+  overflow-x: hidden;
+  height: fit-content;
+  
+}
+::ng-deep img{
+  border-radius: 50%;
+}
+::ng-deep .p-overlay-badge .p-badge{
+ top:79%;
+}
+::ng-deep .p-avatar  {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+::ng-deep .p-badge-dot{
+  min-width: 0.9rem;
+  min-height: 0.9rem;
+  border-style: solid;
+ }
+
+.sucsss{
+  color: #22c55d;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.notExpand{
+  transform: none !important;
+  
+}
