@@ -1,7 +1,6 @@
-<div class="block  overflow-hidden ">
-    <div class="grid" *ngFor="let user of users,let i=index" >
+<div class="grid  overflow-hidden ">
 
-    <p-card [style]="{'height': 'min-content'}"  [class]="user.expanded?'col-8 notExpand  card ':'col-4  card'" (click)="toggleCard(user)">
+    <p-card [style]="{'height': 'min-content'}" *ngFor="let user of users,let i=index"  [class]="user.expanded?'col-8 notExpand  card ':'col-4  card'" (click)="toggleCard(user)">
         <div style="text-align: start;">
             <div class="flex  justify-content-between">
                 <div class="flex align-items-end flex-row">
@@ -72,5 +71,4 @@
             </div>
         </div>
     </p-card>
-</div>
 </div>
